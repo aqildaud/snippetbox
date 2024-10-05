@@ -1,6 +1,7 @@
 ### Generating a self-signed TLS certificate
 
-To create a self-signed certificate using **Go's standard library**, follow these simplified steps:
+To create a self-signed certificate using **Go's standard library**, you’ll need to know the place on your computer where the source code for the Go standard library is installed. If you’re using Linux, macOS or FreeBSD and followed the [official install instructions](https://go.dev/doc/install#install), then the `generate_cert.go` file should be located under `/usr/local/go/src/crypto/tls`. Then, follow this steps:
+
 1. First create a new `tls` directory in the `root` of your project repository to hold the certificate and change into it:
    ```bash
    /your-project-directory
